@@ -17,13 +17,7 @@ defmodule Pipeline.Processor do
   def handle_cast({:event, event}, state) do
     Logger.info("Start of event #{event} processing.")
 
-    latency =
-      Enum.random(
-        for x <- 50..500 do
-          x
-        end
-      )
-
+    latency = Enum.random(50..300)
     Process.sleep(latency)
 
     Logger.info("Processing of event #{event} took #{latency}ms")
