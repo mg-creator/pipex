@@ -4,7 +4,7 @@ Experimental Elixir + GenStage project that explores its capabilities for async 
 
 ## How to
 
-Basically this process brings up three processes:
+Basically this application brings up three processes:
 
 * Producer: buffer for incoming events
 * Consumer: consumes one event whenever processing is done
