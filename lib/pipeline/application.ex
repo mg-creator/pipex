@@ -7,7 +7,7 @@ defmodule Pipeline.Application do
   def start(_type, _args) do
     children = [
       Pipeline.Producer,
-      Pipeline.Consumer,
+      Pipeline.RateLimiter,
       Pipeline.Processor
     ]
 
